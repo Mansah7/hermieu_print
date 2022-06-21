@@ -1,0 +1,124 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: $scroll-padding;
+}
+
+
+
+body{
+    font-family: 'Mulish', sans-serif;
+    line-height: 1.5;
+    color: $black-color;
+    background: rgba($color: $secondary-color, $alpha: .02);
+    user-select: none;
+    overflow-x: hidden;
+}
+.container{
+    width: $container-lg;
+    margin: 0 auto;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+    line-height: 1.2;
+    font-family: 'Oswald', sans-serif;
+}
+
+section{
+    padding-top: 6rem;
+    & > h2{
+        text-align: center;
+    }
+
+    & > p{
+        text-align: center;
+        width: 42%;
+        margin: 0.6rem auto 2.5rem;
+    }
+}
+
+.btn{
+    @include button();
+}
+
+.btn-primary{
+    @include button($white-color, $primary-color);
+}
+
+
+.active{
+    @include button();
+
+   
+
+}
+
+
+.scroll_tracker{
+    position: fixed;
+    inset: 5rem 0 auto;
+    height: .3rem;
+    background: $primary-color-variant;
+    border-radius: 1rem;
+    z-index: 10000;
+    transform-origin: left;
+}
+
+
+
+//================= MEDIA QUERIES (MEDIUM DEVICES) ==================
+
+@media screen and(max-width:1240px) {
+    .container{
+        width: $container-md;
+    }
+    section{
+        & > p{
+            width: 70%;
+        }
+
+        
+    }
+    
+}
+
+
+@media screen and(max-width:1024px) {
+    .container{
+        width: $container-md;
+    }
+    section{
+        & > p{
+            width: 55%;
+        }
+
+        
+    }
+    
+}
+//================= MEDIA QUERIES (SMALL DEVICES) ==================
+
+@media screen and(max-width:600px) {
+    .container{
+        width: $container-md;
+    }
+    section{
+        & > p{
+            width: 90%;
+        }
+
+        margin-top: 0rem;
+
+
+    }
+
+    ul.nav_close{
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+}

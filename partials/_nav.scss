@@ -1,0 +1,563 @@
+nav{
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    z-index: 1000;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 .3rem .5rem rgba($color: $black-color, $alpha: .09);
+    @include navGradientBackground;
+
+    text-transform: uppercase;
+    
+    
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a{
+            color: $white-color;
+            font-weight: 300;
+           
+        }
+
+        a{
+            & > h3{
+                font-size: 2rem;
+                font-family: 'Mulish', sans-serif;
+                font-weight: 900;
+                letter-spacing: .3ch;
+
+            }
+        }
+
+        // .nav_closed {
+        //     visibility: visible;
+        //     opacity: 1;
+        // }
+
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            
+
+            #sous-menu1{
+                position: relative;
+                transition: all 1s ease;
+                padding: 2rem 0;
+               
+
+                ul{
+                    display: none;
+                    
+                }
+
+                &:hover{
+                    ul{
+                        position: absolute;
+                        top: 5rem;
+                        background: $secondary-color;
+                        display: flex;
+                        gap: 1rem;
+                        flex-direction: column;
+                        padding: 0.75rem 4rem 1rem 0;
+                        
+    
+                        li{
+                            padding-left: 0.7rem;
+                            align-self: flex-start;
+                           
+    
+                            a{
+                                color: $white-color;
+                                transition: all 400ms ease;
+                                
+                            }
+
+                            &:hover{
+                                font-size: 1.1rem;
+                                
+                            }
+                        }
+
+                        
+                        
+                    }
+                }
+
+               
+            }
+
+            #sous-menu2{
+                position: relative;
+                padding: 2rem 0;
+
+                ul{
+                    display: none;
+                }
+
+                &:hover{
+                    ul{
+                        position: absolute;
+                        top: 5rem;
+                        background: $secondary-color;
+                        display: flex;
+                        gap: 1rem;
+                        flex-direction: column;
+                        padding: 0.75rem 4rem 1rem 0;
+    
+                        li{
+                            padding-left: 0.7rem;
+                            align-self: flex-start;
+    
+
+    
+                            a{
+                                color: $white-color;
+                                transition: all 400ms ease;
+                            }
+                            &:hover{
+                                font-size: 1.1rem;
+                            }
+                        }
+
+                        
+                        
+                        
+                           
+
+
+                           
+
+                        
+                    }
+                }
+
+               
+            }
+        }
+
+        // ================ MEDIUM DEVICES ONLY ============
+
+        button{
+            background: transparent;
+            font-size: 2rem;
+            color: $white-color;
+            cursor: pointer;
+            display: none !important;
+        }
+        
+        a{
+            // color: $white-color;
+            font-weight: 300;
+        }
+        
+    }
+}
+
+
+// LARGE-MEDIUM
+@media screen and(max-width:1400px) {
+    nav{
+        .container{
+            width: $container-md;
+            button{
+                 
+                &#open_nav-btn{
+                    display: inline-block !important;
+                    background: transparent;
+                    font-size: 2rem;
+                    color: $white-color;
+                    cursor: pointer;
+                }
+
+                &#close_nav-btn{
+                    display: none;
+                }
+            }
+
+            .nav_closed {
+                visibility: hidden;
+                opacity: 0;
+            }
+
+            ul{
+                position: fixed;
+                top: 5rem;
+                right: 5%;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0;
+                display: none;
+                perspective: 300px;
+
+               
+
+                li{
+                    width: 100%;
+                    opacity: 0;
+                    animation: flipnavitems 400ms ease forwards;
+                    transform-origin: top;
+                    
+                    
+
+                    &:nth-child(2){
+                        animation-delay: 200ms;
+                    }
+                    &:nth-child(3){
+                        animation-delay: 400ms;
+                    }
+                    &:nth-child(4){
+                        animation-delay: 600ms;
+                    }
+                    &:nth-child(5){
+                        animation-delay: 800ms;
+                    }
+                    &:nth-child(6){
+                        animation-delay: 1000ms;
+                    }
+
+                    @keyframes flipnavitems {
+                        from{
+
+                            transform: rotateX(90deg);
+
+                        }
+
+                        to{
+
+                            transform: rotateX(0deg);
+                            opacity: 1;
+
+                        }
+                        
+                    }
+
+                    a{
+                        color: $white-color;
+                        height: 100%;
+                        width: 100%;
+                        display: block;
+                        padding: 1.5rem 2rem;
+                        border-radius: 0;
+                        background: linear-gradient($primary-color, darken($primary-color, 8%));
+                        
+
+                        &.btn{
+                            background: $secondary-color;
+                            color: $black-color;
+                        }
+                    }
+                }
+                #sous-menu1, #sous-menu2{
+                    padding: 0;
+
+                    &:hover{
+                        ul{
+                            display: flex;
+                            gap: 0;
+                            right: 9.3rem;
+                            top: 0rem;
+                            width: 100%;
+                            background: transparent;
+                            li{
+                            width: 100%;
+
+                              a{
+                                  padding: 1.2rem .8rem;
+                                 
+                                 
+                              }
+                              
+                            }
+                        }
+
+                    }
+
+                  
+
+            
+                }
+            }
+
+           
+        }
+    }
+  }
+
+
+// //================= MEDIA QUERIES (MEDIUM DEVICES) ==================
+
+
+
+// @media screen and(max-width:1200px) {
+//     nav{
+//         .container{
+//             button{
+//                 display: inline-block;
+//                 background: transparent;
+//                 font-size: 2rem;
+//                 color: $white-color;
+//                 cursor: pointer;
+
+//                 &#close_nav-btn{
+//                     display: none;
+//                 }
+//             }
+
+//             .nav_closed {
+//                 visibility: hidden;
+//                 opacity: 0;
+//             }
+//         }
+
+//     }
+
+// }
+            
+
+@media screen and(max-width:1024px) {
+    nav{
+        .container{
+            button{
+                display: inline-block;
+                background: transparent;
+                font-size: 2rem;
+                color: $white-color;
+                cursor: pointer;
+
+                &#close_nav-btn{
+                    display: none;
+                }
+            }
+
+            .nav_closed {
+                visibility: hidden;
+                opacity: 0;
+            }
+
+            ul{
+                position: fixed;
+                top: 5rem;
+                right: 5%;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0;
+                display: none;
+                perspective: 300px;
+
+               
+
+                li{
+                    width: 100%;
+                    opacity: 0;
+                    animation: flipnavitems 400ms ease forwards;
+                    transform-origin: top;
+                    
+                    
+
+                    &:nth-child(2){
+                        animation-delay: 200ms;
+                    }
+                    &:nth-child(3){
+                        animation-delay: 400ms;
+                    }
+                    &:nth-child(4){
+                        animation-delay: 600ms;
+                    }
+                    &:nth-child(5){
+                        animation-delay: 800ms;
+                    }
+
+                    @keyframes flipnavitems {
+                        from{
+
+                            transform: rotateX(90deg);
+
+                        }
+
+                        to{
+
+                            transform: rotateX(0deg);
+                            opacity: 1;
+
+                        }
+                        
+                    }
+
+                    a{
+                        color: $white-color;
+                        height: 100%;
+                        width: 100%;
+                        display: block;
+                        padding: 1.5rem 2rem;
+                        border-radius: 0;
+                        background: linear-gradient($primary-color, darken($primary-color, 8%));
+                        
+
+                        &.btn{
+                            background: $secondary-color;
+                            color: $black-color;
+                        }
+                    }
+                }
+                #sous-menu1, #sous-menu2{
+                    padding: 0;
+
+                    &:hover{
+                        ul{
+                            display: flex;
+                            gap: 0;
+                            right: 9.3rem;
+                            top: 0rem;
+                            width: 100%;
+                            background: transparent;
+                            li{
+                            width: 100%;
+
+                              a{
+                                  padding: 1.2rem .8rem;
+                                 
+                                 
+                              }
+                              
+                            }
+                        }
+
+                    }
+
+                  
+
+            
+                }
+            }
+        }
+    }
+  }
+
+  //================= MEDIA QUERIES (SMALL DEVICES) ==================
+
+  @media screen and(max-width:600px) {
+    nav{
+        .container{
+            button{
+                display: inline-block;
+                background: transparent;
+                font-size: 2rem;
+                color: $white-color;
+                cursor: pointer;
+
+                &#close_nav-btn{
+                    display: none;
+                }
+            }
+
+            .nav_closed {
+                visibility: hidden;
+                opacity: 0;
+            }
+
+            ul{
+                position: fixed;
+                top: 5rem;
+                right: 5%;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0;
+                display: none;
+                perspective: 300px;
+
+               
+
+                li{
+                    width: 100%;
+                    opacity: 0;
+                    animation: flipnavitems 400ms ease forwards;
+                    transform-origin: top;
+                    
+                    
+
+                    &:nth-child(2){
+                        animation-delay: 200ms;
+                    }
+                    &:nth-child(3){
+                        animation-delay: 400ms;
+                    }
+                    &:nth-child(4){
+                        animation-delay: 600ms;
+                    }
+                    &:nth-child(5){
+                        animation-delay: 800ms;
+                    }
+
+                    @keyframes flipnavitems {
+                        from{
+
+                            transform: rotateX(90deg);
+
+                        }
+
+                        to{
+
+                            transform: rotateX(0deg);
+                            opacity: 1;
+
+                        }
+                        
+                    }
+
+                    a{
+                        color: $white-color;
+                        height: 100%;
+                        width: 100%;
+                        display: block;
+                        padding: 1.5rem 2rem;
+                        border-radius: 0;
+                        background: linear-gradient($primary-color, darken($primary-color, 8%));
+                        
+
+                        &.btn{
+                            background: $secondary-color;
+                            color: $black-color;
+                        }
+                    }
+                }
+                #sous-menu1, #sous-menu2{
+                    padding: 0;
+
+                    &:hover{
+                        ul{
+                            display: flex;
+                            gap: 0;
+                            right: 9.3rem;
+                            top: 0rem;
+                            width: 100%;
+                            background: transparent;
+                            li{
+                            width: 100%;
+
+                              a{
+                                  padding: 1.2rem .7rem;
+                                 
+                                 
+                              }
+                              
+                            }
+                        }
+
+                    }
+
+                  
+
+            
+                }
+            }
+        }
+    }
+  }
+
+    
+

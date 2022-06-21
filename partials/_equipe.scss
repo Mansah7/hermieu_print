@@ -1,0 +1,162 @@
+#our_team{
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .heading{
+            width: 50%;
+           
+        }
+
+        .team_members{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1rem;
+            width: 50%;  
+            align-items: center;
+            justify-content: center;
+
+            .card{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+                img{
+                    width: 200px;
+                    height: 200px;
+                    object-fit: cover;
+                    
+                }
+
+                p{
+                    text-align: center;
+                    padding: 1.4rem;
+                }
+
+                .social{
+                    display: flex;
+                    justify-content: center;
+                    gap: 1rem;
+                    font-size: 1.3rem;
+                    padding-bottom: 2rem;
+                    cursor: pointer;
+                  
+
+                    & >{ 
+                        
+                        transition: all 400ms ease;
+                    }
+
+                    & > :hover{
+                        
+                            font-size: 1.4rem;
+                            color: $primary-color-variant;
+                        
+                    }
+
+                   
+                }
+            
+        }
+    }
+}
+
+
+//================= MEDIA QUERIES (MEDIUM DEVICES) ==================
+
+@media screen and(max-width:1024px){
+
+
+    #our_team{
+
+        .heading { 
+
+          
+
+            p{
+
+                width: 100%;
+
+            }
+           
+        }
+    }
+    
+    
+    
+    }
+
+
+    //================= MEDIA QUERIES (SMALL DEVICES) ==================
+
+@media screen and(max-width:600px){
+
+    #our_team{
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .heading{
+                width: 100%;
+               
+            }
+    
+            .team_members{
+                display: grid;
+                grid-template-columns:  1fr;
+                grid-gap: 1rem;
+                width: 100%;  
+                align-items: center;
+                justify-content: center;
+    
+                .card{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+    
+                    img{
+                        width: 200px;
+                        height: 200px;
+                        object-fit: cover;
+                        
+                    }
+    
+                    p{
+                        text-align: center;
+                        padding: 1.4rem;
+                    }
+    
+                    .social{
+                        display: flex;
+                        justify-content: center;
+                        gap: 1rem;
+                        font-size: 1.3rem;
+                        padding-bottom: 2rem;
+                        cursor: pointer;
+                      
+    
+                        & >{ 
+                            
+                            transition: all 400ms ease;
+                        }
+    
+                        & > :hover{
+                            
+                                font-size: 1.4rem;
+                                color: $primary-color-variant;
+                            
+                        }
+    
+                       
+                    }
+                
+            }
+        }
+    }
+    
+
+}

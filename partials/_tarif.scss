@@ -1,0 +1,288 @@
+
+#tarification{
+    & > h2{
+        font-size: 3rem;
+        font-weight: 300;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    
+        .tarifs{
+            
+
+            width: 70%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1rem;
+
+            
+
+            
+
+            .card{
+
+                text-align: center;
+                border: solid 1px $primary-color;
+                padding: 2rem;
+                border-radius: 10px;
+                
+                h4{
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                    margin-bottom: 1rem;
+                }
+
+                h5{
+                    margin-bottom: 1rem;
+                    font-size: 3rem;
+                    font-weight: 300;
+                }
+
+                p{
+                    margin-bottom: 1rem;
+                }
+            }
+
+            .card_2{
+
+                border: solid 1px magenta;
+
+            }
+            .card_3{
+
+                border: solid 1px rgb(255, 225, 0);
+
+            }
+
+            
+
+        }
+    }
+}
+
+
+
+//================= MEDIA QUERIES (MEDIUM DEVICES) ==================
+
+@media screen and(max-width:1240px){
+
+    #tarification{
+
+        .container{
+            
+            .tarifs{
+                width: 100%;
+                margin: 0 auto;
+
+                .card{
+                    h5{
+                        font-size: 2rem;
+                    }
+                }
+            }
+
+           
+        }
+    }
+
+
+
+
+}
+
+//================= MEDIA QUERIES (MEDIUM DEVICES) ==================
+
+@media screen and(max-width:1400px){
+
+    #tarification{
+
+        .container{
+            
+            .tarifs{
+                width: 100%;
+                margin: 0 auto;
+
+                .card{
+                    h5{
+                        font-size: 2rem;
+                    }
+                }
+            }
+
+           
+        }
+    }
+
+
+
+
+}
+
+
+//================= MEDIA QUERIES (SMALL DEVICES) ==================
+
+@media screen and(max-width:1024px){
+
+    #tarification{
+        & > h2{
+            font-size: 2rem;
+            font-weight: 300;
+        }
+    
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+        
+            .tarifs{
+                
+    
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 1rem;
+
+
+                :last-child{
+                    grid-column: 1 / span 2;
+                }
+    
+                
+    
+                
+    
+                .card{
+    
+                    text-align: center;
+                    border: solid 1px $primary-color;
+                    padding: 2rem;
+                    border-radius: 10px;
+                    
+                    h4{
+                        font-size: 1.5rem;
+                        font-weight: 300;
+                        margin-bottom: 1rem;
+                    }
+    
+                    h5{
+                        margin-bottom: 1rem;
+                        font-size: 2rem;
+                        font-weight: 300;
+                    }
+    
+                    p{
+                        margin-bottom: 1rem;
+                    }
+
+                    a{
+                        width: 100%;
+
+                    }
+                }
+    
+                .card_2{
+    
+                    border: solid 1px magenta;
+    
+                }
+                .card_3{
+    
+                    border: solid 1px rgb(255, 225, 0);
+    
+                }
+    
+                
+    
+            }
+        }
+    }
+    
+
+
+
+}
+//================= MEDIA QUERIES (SMALL DEVICES) ==================
+
+@media screen and(max-width:600px){
+
+    #tarification{
+        & > h2{
+            font-size: 2rem;
+            font-weight: 300;
+        }
+    
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+        
+            .tarifs{
+                
+    
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                grid-gap: 1rem;
+    
+                
+    
+                
+    
+                .card{
+    
+                    text-align: center;
+                    border: solid 1px $primary-color;
+                    padding: 2rem;
+                    border-radius: 10px;
+                    
+                    h4{
+                        font-size: 1.5rem;
+                        font-weight: 300;
+                        margin-bottom: 1rem;
+                    }
+    
+                    h5{
+                        margin-bottom: 1rem;
+                        font-size: 2rem;
+                        font-weight: 300;
+                    }
+    
+                    p{
+                        margin-bottom: 1rem;
+                    }
+
+                    a{
+                        width: 100%;
+
+                    }
+                }
+    
+                .card_2{
+    
+                    border: solid 1px magenta;
+    
+                }
+                .card_3{
+    
+                    border: solid 1px rgb(255, 225, 0);
+    
+                }
+    
+                
+    
+            }
+        }
+    }
+    
+
+
+
+}
+

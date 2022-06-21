@@ -1,0 +1,309 @@
+
+footer{
+    padding: 3rem 0;
+    display: grid;
+    place-items: center;
+    background: $primary-color;
+    color: $white-color;
+
+    .footer_content{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .footer{
+            h3{
+                font-weight: 300;
+                margin-bottom: 1rem;
+            }
+
+            a{
+                display: block;
+                color: $white-color;
+                transition: all 400ms ease;
+
+                &:hover{
+                    color: $primary-color-variant;
+                }
+            }
+        }
+
+        .newsletter{
+            width: 35%;
+            
+            input{
+                border: solid 1px $primary-color-variant;
+                background: transparent;
+                padding: .6rem;
+            }
+
+            input[type='text']{
+                width: 70%;
+            }
+
+            input[type='submit']{
+                
+                background: $primary-color-variant;
+                color: $white-color;
+                border: none;
+                cursor: pointer;
+                transition: all 400ms ease;
+                padding: .71rem;
+
+                &:hover{
+                    background: lighten($color: $primary-color-variant, $amount: 8%);
+                }
+                
+
+            }
+        }
+
+        .reseaux_sociaux{
+
+            .social{
+
+                font-size: 2rem;
+            
+                .icon{
+
+                    &:hover{
+                        transition: all 400ms ease;
+                     
+                            color: $primary-color-variant;
+                      
+                    }
+                }
+
+               
+   
+            }
+        }
+
+       
+       
+    }
+
+    .footer-bottom{
+        padding-top: 3rem;
+        display: flex;
+        justify-content: space-between;
+
+        .copyright{
+            display: flex;
+            gap:3rem;
+
+            & > * {
+                border-right: solid 1px $white-color  ;
+                padding-right: 2rem;
+            }
+
+            :nth-child(2), :nth-child(3){
+                color: $white-color;
+                transition: all 400ms ease;
+
+                &:hover{
+                    color: $primary-color-variant;
+                }
+            }
+        }
+
+        a{
+            color: $white-color;
+            font-size: 1.2rem;
+            transition: all 400ms ease;
+
+            &:hover{
+                color: $primary-color-variant;
+            }
+        }
+
+    }
+}
+
+
+//================= MEDIA QUERIES (MEDIUM DEVICES) ==================
+
+@media screen and(max-width:1400px){
+
+    footer{
+
+        .footer_content{
+
+            display: grid;
+            grid-template-columns: repeat(4 , 1fr);
+            grid-gap: 1rem;
+
+
+            .newsletter{
+                width: 150%;
+
+                input[type='text']{
+                    width: 55%;
+                    display: block;
+                    margin-bottom: .5rem;
+                
+                }
+                input[type='submit']{
+                    width: 55%;
+                    display: block;
+                    margin-bottom: .5rem;
+                
+                }
+            }
+
+            
+     
+        }
+
+        .footer-bottom{
+            .copyright{
+                gap: 1rem;
+
+                & > * {
+                    border-right: solid 1px $white-color  ;
+                    padding-right: 1rem;
+                }
+            }
+
+            a{
+                color: $white-color;
+                font-size: 1rem;
+                transition: all 400ms ease;
+    
+                &:hover{
+                    color: $primary-color-variant;
+                }
+            }
+    
+        }
+
+    }
+
+}
+//================= MEDIA QUERIES (MEDIUM DEVICES) ==================
+
+@media screen and(max-width:1024px){
+
+    footer{
+
+        .footer_content{
+
+            display: grid;
+            grid-template-columns: repeat(2 , 1fr);
+            grid-gap: 1rem;
+
+
+            .newsletter{
+                width: 100%;
+                
+                .news{
+
+                    display: flex;
+                    gap: .3rem;
+                    input[type='text']{
+                        width: 60%;
+                    }
+                    input[type='submit']{
+                        width: 30%;
+                    }
+
+                }
+
+                
+            }
+
+            
+     
+        }
+
+        .footer-bottom{
+            .copyright{
+                gap: 1rem;
+
+                & > * {
+                    border-right: solid 1px $white-color  ;
+                    padding-right: 1rem;
+                }
+            }
+
+            a{
+                color: $white-color;
+                font-size: 1rem;
+                transition: all 400ms ease;
+    
+                &:hover{
+                    color: $primary-color-variant;
+                }
+            }
+    
+        }
+
+    }
+
+}
+
+
+//================= MEDIA QUERIES (MEDIUM DEVICES) ==================
+
+@media screen and(max-width:600px){
+
+    footer{
+
+        .footer_content{
+
+            display: grid;
+            grid-template-columns:  1fr;
+            grid-gap: 1.3rem;
+
+
+            .newsletter{
+                width: 100%;
+
+                input[type='text']{
+                    width: 65%;
+                }
+            }
+
+            & * a {
+                font-size: .9rem;
+            }
+
+            
+     
+        }
+
+        .footer-bottom{
+            .copyright{
+                display: flex;
+                flex-direction: row;
+
+                & > * {
+                    border-right: solid 1px $white-color  ;
+                    padding-right: .5rem;
+                }
+
+                p{
+                    font-size: .7rem;
+                }
+            }
+
+            a{
+                color: $white-color;
+                font-size: .7rem;
+                transition: all 400ms ease;
+    
+                &:hover{
+                    color: $primary-color-variant;
+                }
+            }
+    
+        }
+
+    }
+
+    
+
+
+}
+
+

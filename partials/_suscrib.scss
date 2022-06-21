@@ -1,0 +1,196 @@
+
+
+#suscribe{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container{
+        .section_holder{
+            width: max-content;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+
+            
+            margin: 0 auto;
+
+            .card_details{
+                background-color: rgba($black-color, .02);
+                padding: 3rem;
+
+                .top{
+                    display: flex;
+                    justify-content: space-between;
+
+                    .left{
+                        h3{
+                            font-size: 1.5rem;
+                            font-weight: 300;
+                        }
+
+                        .important_links{
+                            display: flex;
+                            flex-direction: column;
+                            margin: 1rem 0;
+                            a {
+                                color: $black-color;
+
+                            }
+
+            
+
+                          
+                        }
+                    }
+
+                    .logo{
+                        h1{
+                            font-family: 'Mulish', sans-serif;
+                        }
+                    }
+                }
+
+                .midle{
+
+                    h4{
+                        font-weight: 400;
+                        padding-bottom: .5rem;
+                        
+                    }
+
+                    .t_head{
+                        display: flex;
+                        justify-content: space-between;
+                        padding: .5rem 0;
+                        border-top: solid 1px rgba($color: #000000, $alpha: 1.0);
+
+                    }
+
+
+                }
+
+                .bottom{
+                    > div{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0rem;
+
+                        .fa-brands{
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+
+            }
+
+            .card_infos{
+                background-color: $primary-color;
+                padding: 3rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                h2{
+                    font-size: 2rem;
+                    color: $white-color;
+                }
+
+                .nom{
+                    color: $white-color;
+                    input{
+                        width: 100%;
+                        margin-top: .5rem;
+                        padding: .5rem;
+                    }
+                }
+
+                .card-detail{
+                    color: $white-color;
+                    input{
+                        margin-top: .5rem;
+                        width: 100%;
+                        padding: .5rem;
+                    }
+
+                }
+
+                .code{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    gap: 1rem;
+                    font-size: .9rem;
+                    color: $white-color;
+
+                    * input{
+                        width: 4rem;
+                        padding: .5rem;
+                        margin-top: .5rem;
+                    }
+
+                    .month, .cvc{
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    
+
+                    
+                }
+
+
+                .cta-btn{
+                    align-self: center;
+                    margin-top: 2rem;
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 1rem;
+                    width: 100%;
+
+                    .cancel{
+                        background: transparent;
+                        color: $white-color;
+                        cursor: pointer;
+                    }
+
+                    .pay{
+
+                        background: $succes-color;
+                        color: $white-color;
+                        padding: 1rem;
+                        width: 40%;
+                        cursor: pointer;
+                        transition: all 400ms ease;
+
+                        &:hover{
+                            background-color: lighten($color: $succes-color, $amount: 6%);
+                        }
+
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+// MEDIUM AND SMALL SCREEN
+
+@media screen and (max-width: 1024px) {
+
+    #suscribe{
+
+        height: max-content;
+        
+        .container{
+            .section_holder{
+                flex-direction: column;
+                margin: 3rem auto;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,152 @@
+
+
+#devis{
+
+    background: rgba($color: $dark-color, $alpha: .03);
+    padding: 3rem 0;
+    // margin-bottom: 3rem;
+
+
+    & > h2 {
+        font-size: 3rem;
+        font-weight: 300;
+    }
+
+    & > p {
+        width: 25%;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .form_container{
+            width: 50%;
+
+            label{
+
+                display: block;
+                width: 100%;
+                margin-top: 1rem;
+                margin-bottom: .7rem;
+            }
+
+            input{
+                border: solid 1px $primary-color;
+                width: 100%;
+                padding: 1rem 1rem;
+                background: transparent;
+                border-radius: 5px;
+            }
+
+            input[type='submit']{
+                padding: 0;
+                background: transparent;
+                color: $white-color;
+                border: 0;
+            }
+
+            .choix_service{
+                select{
+                    border: solid 1px $primary-color;
+                    width: 100%;
+                    padding: 1rem 1rem;
+                    background: transparent;
+                    border-radius: 5px;
+
+                }
+            }
+
+            .texte{
+                textarea{
+
+                    border: solid 1px $primary-color;
+                    width: 100%;
+                    padding: 1rem 1rem;
+                    background: transparent;
+                    border-radius: 7px;
+
+                }
+            }
+
+            .btn{
+                margin-top: 1rem;
+            }
+           
+        }
+    }
+}
+
+//================= MEDIA QUERIES (MEDIUM DEVICES) ==================
+
+@media screen and(max-width:1400px){
+
+    #devis{
+        & > p {
+            width: 50%;
+        }
+
+
+        .container{
+            .form_container{
+
+                width: 90%;
+
+            }
+        }
+    }
+
+}
+//================= MEDIA QUERIES (MEDIUM DEVICES) ==================
+
+@media screen and(max-width:1024px){
+
+    #devis{
+        & > p {
+            width: 50%;
+        }
+
+
+        .container{
+            .form_container{
+
+                width: 100%;
+
+            }
+        }
+    }
+
+}
+
+
+//================= MEDIA QUERIES (SMALL DEVICES) ==================
+
+@media screen and(max-width:600px){
+
+        #devis{
+
+            & > h2{
+                font-size: 2rem;
+            }
+        & > p {
+            width: 90%;
+            margin-bottom: 2rem;
+        }
+
+
+        .container{
+            .form_container{
+
+                width: 100%;
+
+                .btn{
+                    width: 100%;
+                }
+
+            }
+        }
+    }
+
+
+
+}
