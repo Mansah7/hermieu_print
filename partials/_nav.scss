@@ -2,6 +2,8 @@ nav{
     width: 100vw;
     height: 5rem;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 1000;
     display: grid;
     place-items: center;
@@ -20,15 +22,46 @@ nav{
         a{
             color: $white-color;
             font-weight: 300;
+            
            
         }
 
-        a{
-            & > h3{
+        a{  
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 500ms ease;
+            
+
+            & > span{
                 font-size: 2rem;
-                font-family: 'Mulish', sans-serif;
                 font-weight: 900;
-                letter-spacing: .3ch;
+                
+
+               
+
+            }
+
+            & > span#rotate{
+                width: 10px;
+                height: 30px;
+                background-color: $secondary-color;
+                transform: rotate(90deg);
+                margin: 0 1rem;
+                transition: all 500ms ease;
+ 
+            }
+
+            &:hover{
+                
+                & >span#rotate{
+                    width: 8px;
+                    height: 25px;
+                    background-color: $secondary-color;
+                    transform: rotate(0deg);
+                    margin: .5rem;
+                }
 
             }
         }
@@ -160,6 +193,212 @@ nav{
 
 
 // LARGE-MEDIUM
+
+
+
+@media screen and (max-width:1800px) {
+
+    nav{
+        width: 100vw;
+        height: 5rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        display: grid;
+        place-items: center;
+        box-shadow: 0 .3rem .5rem rgba($color: $black-color, $alpha: .09);
+        @include navGradientBackground;
+    
+        text-transform: uppercase;
+        
+        
+    
+        .container{
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            a{
+                color: $white-color;
+                font-weight: 300;
+                
+               
+            }
+    
+            a{  
+    
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                transition: all 500ms ease;
+                
+    
+                & > span{
+                    font-size: 2rem;
+                    font-weight: 900;
+                    
+    
+                   
+    
+                }
+    
+                & > span#rotate{
+                    width: 10px;
+                    height: 30px;
+                    background-color: $secondary-color;
+                    transform: rotate(90deg);
+                    margin: 0 1rem;
+                    transition: all 500ms ease;
+     
+                }
+    
+                &:hover{
+                    
+                    & >span#rotate{
+                        width: 8px;
+                        height: 25px;
+                        background-color: $secondary-color;
+                        transform: rotate(0deg);
+                        margin: .5rem;
+                    }
+    
+                }
+            }
+    
+            // .nav_closed {
+            //     visibility: visible;
+            //     opacity: 1;
+            // }
+    
+            ul{
+                display: flex;
+                align-items: center;
+                gap: 3rem;
+                
+    
+                #sous-menu1{
+                    position: relative;
+                    transition: all 1s ease;
+                    padding: 2rem 0;
+                   
+    
+                    ul{
+                        display: none;
+                        
+                    }
+    
+                    &:hover{
+                        ul{
+                            position: absolute;
+                            top: 5rem;
+                            background: $secondary-color;
+                            display: flex;
+                            gap: 1rem;
+                            flex-direction: column;
+                            padding: 0.75rem 4rem 1rem 0;
+                            
+        
+                            li{
+                                padding-left: 0.7rem;
+                                align-self: flex-start;
+                               
+        
+                                a{
+                                    color: $white-color;
+                                    transition: all 400ms ease;
+                                    
+                                }
+    
+                                &:hover{
+                                    font-size: 1.1rem;
+                                    
+                                }
+                            }
+    
+                            
+                            
+                        }
+                    }
+    
+                   
+                }
+    
+                #sous-menu2{
+                    position: relative;
+                    padding: 2rem 0;
+    
+                    ul{
+                        display: none;
+                    }
+    
+                    &:hover{
+                        ul{
+                            position: absolute;
+                            top: 5rem;
+                            background: $secondary-color;
+                            display: flex;
+                            gap: 1rem;
+                            flex-direction: column;
+                            padding: 0.75rem 4rem 1rem 0;
+        
+                            li{
+                                padding-left: 0.7rem;
+                                align-self: flex-start;
+        
+    
+        
+                                a{
+                                    color: $white-color;
+                                    transition: all 400ms ease;
+                                }
+                                &:hover{
+                                    font-size: 1.1rem;
+                                }
+                            }
+    
+                            
+                            
+                            
+                               
+    
+    
+                               
+    
+                            
+                        }
+                    }
+    
+                   
+                }
+            }
+    
+            // ================ MEDIUM DEVICES ONLY ============
+    
+            button{
+                background: transparent;
+                font-size: 2rem;
+                color: $white-color;
+                cursor: pointer;
+                display: none !important;
+            }
+            
+            a{
+                // color: $white-color;
+                font-weight: 300;
+            }
+            
+        }
+    }
+    
+    
+}
+
+
+
+
+
 @media screen and(max-width:1400px) {
     nav{
         .container{
@@ -183,6 +422,8 @@ nav{
                 visibility: hidden;
                 opacity: 0;
             }
+
+            
 
             ul{
                 position: fixed;

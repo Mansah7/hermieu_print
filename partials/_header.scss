@@ -4,7 +4,6 @@ header{
     display: grid;
     place-items: center;
     overflow: hidden;
-    background: url(/images/color-palette.jpg) no-repeat center center/cover;
     ::after{
         content: '';
         position:absolute;
@@ -12,8 +11,8 @@ header{
         left: 0;
         width: 100vw;
         height: 100vh;
-        background: $black-color ;
-        opacity: .2;
+        background: $primary-color ;
+        opacity: 1;
         z-index: -1;
         
     }
@@ -33,30 +32,48 @@ header{
         .hero_content{
 
     
-            width: 70%;
             
-            h1{
-                font-size: 3.5rem;
-                line-height: 1.2;
-                margin-bottom: 2rem;
-                font-weight: 400;
-                color: $white-color;
-                
-                
-                
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+
+            .left{
+
+                display: flex;
+                flex-direction: column;
+
+                h1{
+                    font-size: 3.5rem;
+                    line-height: 1.2;
+                    margin-bottom: 2rem;
+                    font-weight: 400;
+                    color: $white-color;
+                    
+                    
+                    
+                }
+    
+                p{
+                    width: 60%;
+                    margin-bottom: 2rem;
+                    color: $white-color;
+                    
+                   
+                }
+    
+                a{
+                    
+                    color: $white-color;
+                    
+                }
             }
 
-            p{
-                width: 60%;
-                margin-bottom: 2rem;
-                color: $white-color;
-               
+            .right{
+                width: 100%;
             }
+            
 
-            a{
-                
-                color: $black-color;
-            }
 
         }
 
@@ -73,7 +90,7 @@ header{
 
 //================= MEDIA QUERIES (SMALL DEVICES) ==================
 
-@media screen and(max-width:1240px) {
+@media screen and(max-width:1800px) {
 
     header{
         // @include gradientBackground;
@@ -82,7 +99,6 @@ header{
         grid-template-columns: 1fr;
         place-items: center;
         overflow: hidden;
-        background: url(images/color-palette2.jpg) no-repeat center center/cover;
         ::after{
             content: '';
             position:absolute;
@@ -90,8 +106,8 @@ header{
             left: 0;
             width: 100vw;
             height: 100vh;
-            background: $black-color ;
-            opacity: .2;
+            background: $primary-color ;
+            opacity: 1;
             z-index: -1;
             
         }
@@ -100,17 +116,19 @@ header{
     
         .container{
             
+            width: 90%;
           
         
             .hero_content{
 
-                display: grid;
-                grid-template-columns: 1fr;            
+                width: 100%;
                 z-index: 100;
+
+                .left{
 
                 h1{
                    
-                    font-size: 3.5rem;
+                    font-size: 2.8rem;
                     line-height: 1.2;
                     margin-bottom: 2rem;
                     font-weight: 400;
@@ -125,14 +143,189 @@ header{
                     
                     color: $white-color;
                     margin-bottom: 2rem;
+                    width: 70%;
                    
                 }
     
                 a{
-                    color: $black-color;
+                    color: $white-color;
                     padding: .7rem 1rem;
                     text-align: center;
                 }
+                }
+
+
+                .right{
+                    width: 150%;
+                }
+
+    
+            }
+
+            
+    
+           
+    
+        
+        }
+    }
+    
+
+
+}
+@media screen and(max-width:1400px) {
+
+    header{
+        // @include gradientBackground;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        overflow: hidden;
+        ::after{
+            content: '';
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: $primary-color ;
+            opacity: 1;
+            z-index: -1;
+            
+        }
+        
+        
+    
+        .container{
+            
+            width: 90%;
+          
+        
+            .hero_content{
+
+                width: 100%;
+                z-index: 100;
+
+                .left{
+
+                h1{
+                   
+                    font-size: 2.8rem;
+                    line-height: 1.2;
+                    margin-bottom: 2rem;
+                    font-weight: 400;
+                    color: $white-color;
+                    
+                    
+                    
+                    
+                }
+    
+                p{
+                    
+                    color: $white-color;
+                    margin-bottom: 2rem;
+                    width: 70%;
+                   
+                }
+    
+                a{
+                    color: $white-color;
+                    padding: .7rem 1rem;
+                    text-align: center;
+                }
+                }
+
+
+                .right{
+                    width: 150%;
+                }
+
+    
+            }
+
+            
+    
+           
+    
+        
+        }
+    }
+    
+
+
+}
+@media screen and(max-width:1240px) {
+
+    header{
+        // @include gradientBackground;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        overflow: hidden;
+        ::after{
+            content: '';
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: $primary-color ;
+            opacity: 1;
+            z-index: -1;
+            
+        }
+        
+        
+    
+        .container{
+            
+          
+        
+            .hero_content{
+
+                flex-direction: column-reverse;
+                z-index: 100;
+
+
+
+                .left{
+
+                    h1{
+                   
+                        font-size: 2.8rem;
+                        line-height: 1.2;
+                        margin-bottom: 2rem;
+                        font-weight: 400;
+                        color: $white-color;
+                        
+                        
+                        
+                        
+                    }
+        
+                    p{
+                        width: 70%;
+                        color: $white-color;
+                        margin-bottom: 2rem;
+                       
+                    }
+        
+                    a{
+                        color: $white-color;
+                        padding: .7rem 1rem;
+                        text-align: center;
+                    }
+
+                }
+
+                .right{
+                    width: 100%;
+                }
+
+         
     
             }
     
@@ -170,7 +363,7 @@ header{
 
                 a{
                    font-size: .8rem;
-                   color: $black-color;
+                   color: $white-color;
                 }
             }
         }
@@ -188,7 +381,7 @@ header{
         display: grid;
         place-items: center;
         overflow: hidden;
-        background: url(images/color-palette2.jpg) no-repeat center center/cover;
+        background: url(images/hero.svg) no-repeat center center/cover;
         ::after{
             content: '';
             position:absolute;
@@ -196,8 +389,8 @@ header{
             left: 0;
             width: 100vw;
             height: 100vh;
-            background: $black-color ;
-            opacity: .2;
+            background: $primary-color ;
+            opacity: .3;
             z-index: -1;
             
         }
@@ -219,8 +412,10 @@ header{
             .hero_content{
 
                 width: 90%;
+               .left{
+
                 h1{
-                    font-size: 2.5rem;
+                    font-size: 1.8rem;
                     line-height: 1.2;
                     margin-bottom: 2rem;
                     font-weight: 400;
@@ -241,12 +436,13 @@ header{
                 }
     
                 a{
-                    color: $black-color;
+                    color: $white-color;
                     width: 100%;
                     padding: .7rem 0;
                     text-align: center;
                 }
     
+               }
             }
     
     
