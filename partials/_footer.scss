@@ -261,6 +261,10 @@ footer{
 
                 input[type='text']{
                     width: 65%;
+                    min-height: 1rem;
+                }
+                input[type='submit']{
+                    min-height: 1rem;
                 }
             }
 

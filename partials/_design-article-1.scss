@@ -12,6 +12,9 @@ section{
             
             .liens{
                 margin-bottom: 2rem;
+                :nth-child(3){
+                    background-color: $black-color;
+                }
             }
 
             img{
@@ -54,6 +57,7 @@ section{
 
                 .newsletter_suscribe{
                     width: 100%;
+                    background-color: rgba($black-color, .03);
                     input{
                         display: block;
                         width: 100%;
@@ -214,7 +218,7 @@ section{
     section{
         .container{
             .hero{
-                margin-top: 3rem;
+                margin-top: .5rem;
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
@@ -223,6 +227,7 @@ section{
                 gap: 1.5rem;
                 .liens{
                     margin-bottom: 2rem;
+                   
                     
                 }
     
@@ -265,11 +270,14 @@ section{
     
                     .newsletter_suscribe{
                         width: 100%;
+                        background-color: rgba($black-color, .03);
                         input{
                             display: block;
                             width: 100%;
+                            height: max-content;
                             padding: 1rem;
                             margin-bottom: .6rem;
+                            min-height: 1rem;
                         }
                     }
                     .related_post{
@@ -396,9 +404,13 @@ section{
                     padding: 2rem;
     
                     .compte{
+
+                        font-size: .7rem;
     
                         transition: all 400ms ease;
                         a{
+
+                            margin-right: .5rem;
                             &:hover{
                                 color: $secondary-color;
                             }
@@ -414,6 +426,14 @@ section{
                         letter-spacing: .1ch;
                         font-size: 1rem;
                         font-weight: 400;
+                    }
+
+                    input[type='submit']{
+                        
+                        width: 100%;
+                        min-height: 1rem;
+                        padding: 1rem;
+                        
                     }
                     
                 }

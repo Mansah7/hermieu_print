@@ -655,7 +655,7 @@ header {
   display: grid;
   place-items: center;
   overflow: hidden;
-  background: url(images/color-palette2.jpg) no-repeat center center/cover;
+  background: url(/images/color-palette.jpg) no-repeat center center/cover;
 }
 
 header ::after {
@@ -2843,6 +2843,10 @@ footer .footer-bottom a:hover {
   }
   footer .footer_content .newsletter input[type='text'] {
     width: 65%;
+    min-height: 1rem;
+  }
+  footer .footer_content .newsletter input[type='submit'] {
+    min-height: 1rem;
   }
   footer .footer_content * a {
     font-size: .9rem;
@@ -2875,7 +2879,7 @@ footer .footer-bottom a:hover {
 }
 
 .blog {
-  height: 40vh;
+  height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2886,7 +2890,7 @@ footer .footer-bottom a:hover {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-  background: url(images/Design_02.jpg) no-repeat center center/cover;
+  background: url(/images/color-palette2.jpg) no-repeat center center/cover;
 }
 
 .blog ::after {
@@ -2895,14 +2899,14 @@ footer .footer-bottom a:hover {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 40vh;
+  height: 70vh;
   background: #0c031b;
   opacity: .2;
   z-index: -1;
 }
 
 .blog .hero-content {
-  max-width: 50%;
+  max-width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2932,6 +2936,7 @@ footer .footer-bottom a:hover {
 }
 
 #post_section {
+  margin-top: 0rem;
   margin-bottom: 6rem;
 }
 
@@ -2943,7 +2948,8 @@ footer .footer-bottom a:hover {
       -ms-flex-align: center;
           align-items: center;
   gap: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+  margin-top: -3rem;
 }
 
 #post_section .post_filter span {
@@ -2954,7 +2960,7 @@ footer .footer-bottom a:hover {
 }
 
 #post_section .post_filter span:hover {
-  color: #00CCD1;
+  color: #fff;
 }
 
 #post_section .post_container {
@@ -3055,6 +3061,9 @@ footer .footer-bottom a:hover {
 }
 
 @media screen and (max-width: 1024px) {
+  #post_section {
+    margin-bottom: 3rem;
+  }
   #post_section .post_container {
     display: -ms-grid;
     display: grid;
@@ -3065,6 +3074,9 @@ footer .footer-bottom a:hover {
 }
 
 @media screen and (max-width: 600px) {
+  #post_section {
+    margin-bottom: 3rem;
+  }
   #post_section .post_container {
     display: -ms-grid;
     display: grid;
@@ -3091,6 +3103,10 @@ section .container .hero {
 
 section .container .hero .liens {
   margin-bottom: 2rem;
+}
+
+section .container .hero .liens :nth-child(3) {
+  background-color: #0c031b;
 }
 
 section .container .hero img {
@@ -3139,6 +3155,7 @@ section .container .post-content aside h3 {
 
 section .container .post-content aside .newsletter_suscribe {
   width: 100%;
+  background-color: rgba(12, 3, 27, 0.03);
 }
 
 section .container .post-content aside .newsletter_suscribe input {
@@ -3299,7 +3316,7 @@ section .container .comment .comment_container h5 {
 
 @media screen and (max-width: 600px) {
   section .container .hero {
-    margin-top: 3rem;
+    margin-top: .5rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3357,12 +3374,17 @@ section .container .comment .comment_container h5 {
   }
   section .container .post-content aside .newsletter_suscribe {
     width: 100%;
+    background-color: rgba(12, 3, 27, 0.03);
   }
   section .container .post-content aside .newsletter_suscribe input {
     display: block;
     width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
     padding: 1rem;
     margin-bottom: .6rem;
+    min-height: 1rem;
   }
   section .container .post-content aside .related_post .post-box .post {
     margin-bottom: 1rem;
@@ -3486,8 +3508,12 @@ section .container .comment .comment_container h5 {
     padding: 2rem;
   }
   section .container .comment .comment_container .compte {
+    font-size: .7rem;
     -webkit-transition: all 400ms ease;
     transition: all 400ms ease;
+  }
+  section .container .comment .comment_container .compte a {
+    margin-right: .5rem;
   }
   section .container .comment .comment_container .compte a:hover {
     color: #00CCD1;
@@ -3500,6 +3526,11 @@ section .container .comment .comment_container h5 {
     letter-spacing: .1ch;
     font-size: 1rem;
     font-weight: 400;
+  }
+  section .container .comment .comment_container input[type='submit'] {
+    width: 100%;
+    min-height: 1rem;
+    padding: 1rem;
   }
 }
 
@@ -3708,11 +3739,350 @@ section .container .comment .comment_container h5 {
     height: max-content;
   }
   #suscribe .container .section_holder {
+    width: 90%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 3rem auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 2rem 0;
+  }
+  #suscribe .container .section_holder .card_details {
+    background-color: rgba(12, 3, 27, 0.02);
+    padding: 3rem;
+  }
+  #suscribe .container .section_holder .card_details .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #suscribe .container .section_holder .card_details .top .left h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  #suscribe .container .section_holder .card_details .top .left .important_links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1rem 0;
+  }
+  #suscribe .container .section_holder .card_details .top .left .important_links a {
+    color: #0c031b;
+  }
+  #suscribe .container .section_holder .card_details .top .logo h1 {
+    font-family: 'Mulish', sans-serif;
+  }
+  #suscribe .container .section_holder .card_details .midle h4 {
+    font-weight: 400;
+    padding-bottom: .5rem;
+  }
+  #suscribe .container .section_holder .card_details .midle .t_head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: .5rem 0;
+    border-top: solid 1px black;
+  }
+  #suscribe .container .section_holder .card_details .bottom > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0rem;
+  }
+  #suscribe .container .section_holder .card_details .bottom > div .fa-brands {
+    font-size: 1.5rem;
+  }
+  #suscribe .container .section_holder .card_infos {
+    background-color: #1c94d8;
+    padding: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+  }
+  #suscribe .container .section_holder .card_infos h2 {
+    font-size: 2rem;
+    color: #fff;
+  }
+  #suscribe .container .section_holder .card_infos .nom {
+    color: #fff;
+  }
+  #suscribe .container .section_holder .card_infos .nom input {
+    width: 100%;
+    margin-top: .5rem;
+    padding: .5rem;
+  }
+  #suscribe .container .section_holder .card_infos .card-detail {
+    color: #fff;
+  }
+  #suscribe .container .section_holder .card_infos .card-detail input {
+    margin-top: .5rem;
+    width: 100%;
+    padding: .5rem;
+  }
+  #suscribe .container .section_holder .card_infos .code {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    gap: 1rem;
+    font-size: .9rem;
+    color: #fff;
+  }
+  #suscribe .container .section_holder .card_infos .code * input {
+    width: 4rem;
+    padding: .5rem;
+    margin-top: .5rem;
+  }
+  #suscribe .container .section_holder .card_infos .code .month, #suscribe .container .section_holder .card_infos .code .cvc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #suscribe .container .section_holder .card_infos .cta-btn {
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-top: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  #suscribe .container .section_holder .card_infos .cta-btn .cancel {
+    background: #d53c3c;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    padding: 1rem;
+  }
+  #suscribe .container .section_holder .card_infos .cta-btn .pay {
+    display: block;
+    background: #2bb604;
+    color: #fff;
+    padding: 1rem;
+    width: 100%;
+    cursor: pointer;
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+  }
+  #suscribe .container .section_holder .card_infos .cta-btn .pay:hover {
+    background-color: #32d405;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #suscribe {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  #suscribe .container .section_holder {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 2rem 0;
+  }
+  #suscribe .container .section_holder .card_details {
+    background-color: rgba(12, 3, 27, 0.02);
+    padding: 3rem;
+  }
+  #suscribe .container .section_holder .card_details .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #suscribe .container .section_holder .card_details .top .left h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  #suscribe .container .section_holder .card_details .top .left .important_links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1rem 0;
+  }
+  #suscribe .container .section_holder .card_details .top .left .important_links a {
+    color: #0c031b;
+  }
+  #suscribe .container .section_holder .card_details .top .logo h1 {
+    font-family: 'Mulish', sans-serif;
+  }
+  #suscribe .container .section_holder .card_details .midle h4 {
+    font-weight: 400;
+    padding-bottom: .5rem;
+  }
+  #suscribe .container .section_holder .card_details .midle .t_head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: .5rem 0;
+    border-top: solid 1px black;
+  }
+  #suscribe .container .section_holder .card_details .bottom > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0rem;
+  }
+  #suscribe .container .section_holder .card_details .bottom > div .fa-brands {
+    font-size: 1.5rem;
+  }
+  #suscribe .container .section_holder .card_infos {
+    background-color: #1c94d8;
+    padding: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+  }
+  #suscribe .container .section_holder .card_infos h2 {
+    font-size: 2rem;
+    color: #fff;
+  }
+  #suscribe .container .section_holder .card_infos .nom {
+    color: #fff;
+  }
+  #suscribe .container .section_holder .card_infos .nom input {
+    width: 100%;
+    margin-top: .5rem;
+    padding: .5rem;
+  }
+  #suscribe .container .section_holder .card_infos .card-detail {
+    color: #fff;
+  }
+  #suscribe .container .section_holder .card_infos .card-detail input {
+    margin-top: .5rem;
+    width: 100%;
+    padding: .5rem;
+  }
+  #suscribe .container .section_holder .card_infos .code {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    gap: 1rem;
+    font-size: .9rem;
+    color: #fff;
+  }
+  #suscribe .container .section_holder .card_infos .code * input {
+    width: 4rem;
+    padding: .5rem;
+    margin-top: .5rem;
+  }
+  #suscribe .container .section_holder .card_infos .code .month, #suscribe .container .section_holder .card_infos .code .cvc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #suscribe .container .section_holder .card_infos .cta-btn {
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-top: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  #suscribe .container .section_holder .card_infos .cta-btn .cancel {
+    background: #d53c3c;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    padding: 1rem;
+  }
+  #suscribe .container .section_holder .card_infos .cta-btn .pay {
+    display: block;
+    background: #2bb604;
+    color: #fff;
+    padding: 1rem;
+    width: 100%;
+    cursor: pointer;
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+  }
+  #suscribe .container .section_holder .card_infos .cta-btn .pay:hover {
+    background-color: #32d405;
   }
 }
 

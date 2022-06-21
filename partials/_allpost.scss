@@ -1,10 +1,14 @@
 #post_section{
+
+    margin-top: 0rem;
     margin-bottom: 6rem;
     .post_filter{
         display: flex;
         align-items: center;
         gap: 1rem;
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
+        margin-top: -3rem;
+        
        
 
 
@@ -15,7 +19,7 @@
         cursor: pointer;
         transition: all 400ms ease;
         &:hover{
-            color: $secondary-color;
+            color: $white-color;
         }
             
 
@@ -125,6 +129,9 @@
 
     #post_section{
 
+        margin-bottom: 3rem;
+        
+
         .post_container{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -142,6 +149,9 @@
 @media screen and (max-width:600px) {
 
     #post_section{
+
+        margin-bottom: 3rem;
+        
 
         .post_container{
             display: grid;
