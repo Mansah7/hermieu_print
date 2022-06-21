@@ -655,7 +655,7 @@ header {
   display: grid;
   place-items: center;
   overflow: hidden;
-  background: url(/images/color-palette2.jpg) no-repeat center center/cover;
+  background: url(images/color-palette2.jpg) no-repeat center center/cover;
 }
 
 header ::after {
@@ -710,7 +710,7 @@ header .container .hero_image img {
         grid-template-columns: 1fr;
     place-items: center;
     overflow: hidden;
-    background: url(/images/color-palette2.jpg) no-repeat center center/cover;
+    background: url(images/color-palette2.jpg) no-repeat center center/cover;
   }
   header ::after {
     content: '';
@@ -773,7 +773,7 @@ header .container .hero_image img {
     display: grid;
     place-items: center;
     overflow: hidden;
-    background: url(/images/color-palette2.jpg) no-repeat center center/cover;
+    background: url(images/color-palette2.jpg) no-repeat center center/cover;
   }
   header ::after {
     content: '';
@@ -2886,7 +2886,7 @@ footer .footer-bottom a:hover {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-  background: url(/images/Design_02.jpg) no-repeat center center/cover;
+  background: url(images/Design_02.jpg) no-repeat center center/cover;
 }
 
 .blog ::after {

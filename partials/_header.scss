@@ -4,7 +4,7 @@ header{
     display: grid;
     place-items: center;
     overflow: hidden;
-    background: url(/images/color-palette2.jpg) no-repeat center center/cover;
+    background: url(images/color-palette2.jpg) no-repeat center center/cover;
     ::after{
         content: '';
         position:absolute;
@@ -82,7 +82,7 @@ header{
         grid-template-columns: 1fr;
         place-items: center;
         overflow: hidden;
-        background: url(/images/color-palette2.jpg) no-repeat center center/cover;
+        background: url(images/color-palette2.jpg) no-repeat center center/cover;
         ::after{
             content: '';
             position:absolute;
@@ -188,7 +188,7 @@ header{
         display: grid;
         place-items: center;
         overflow: hidden;
-        background: url(/images/color-palette2.jpg) no-repeat center center/cover;
+        background: url(images/color-palette2.jpg) no-repeat center center/cover;
         ::after{
             content: '';
             position:absolute;
