@@ -35,6 +35,14 @@ section{
             p{
                 margin-bottom: 2rem;
             }
+
+            .btn{
+                
+                padding: .7rem 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
         }
     }
 }
@@ -130,10 +138,16 @@ section{
                 text-align: center; 
             }
 
-            a{
-                width: 100%;
-                text-align: center;
+           
+            .btn{
+                    width: 100%;
+                    padding: .7rem 2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    display: none;
             }
+            
         }
     }
 }

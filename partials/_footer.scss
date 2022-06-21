@@ -10,8 +10,61 @@ footer{
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+       
 
         .footer{
+
+            .text{
+               width: 70%;
+                
+            }
+
+            .nav_logo{
+
+                display: flex;
+                
+                align-items: center;
+                transition: all 500ms ease;
+                
+                
+    
+                & > span{
+                    font-size: 2rem;
+                    font-weight: 900;
+                    
+    
+                   
+    
+                }
+    
+                & > span#rotate_2{
+                    width: 10px;
+                    height: 30px;
+                    background-color: $secondary-color;
+                    transform: rotate(90deg);
+                    margin: 0 1rem;
+                    transition: all 500ms ease;
+     
+                }
+    
+                &:hover{
+                    
+                    & >span#rotate_2{
+                        width: 8px;
+                        height: 25px;
+                        background-color: $secondary-color;
+                        transform: rotate(0deg);
+                        margin: .5rem;
+                    }
+    
+                }
+
+               
+
+               
+
+            }
+
             h3{
                 font-weight: 300;
                 margin-bottom: 1rem;
@@ -22,39 +75,56 @@ footer{
                 color: $white-color;
                 transition: all 400ms ease;
 
-                &:hover{
-                    color: $primary-color-variant;
+                &:hover{ 
+                    color: $white-color;
                 }
             }
         }
 
         .newsletter{
             width: 35%;
-            
-            input{
-                border: solid 1px $primary-color-variant;
-                background: transparent;
-                padding: .6rem;
-            }
-
-            input[type='text']{
-                width: 70%;
-            }
-
-            input[type='submit']{
+           
+            .news{
+                display: flex;
+                gap: .7rem;
                 
-                background: $primary-color-variant;
-                color: $white-color;
-                border: none;
-                cursor: pointer;
-                transition: all 400ms ease;
-                padding: .71rem;
 
-                &:hover{
-                    background: lighten($color: $primary-color-variant, $amount: 8%);
+                input{
+                    width: 60%;
+                    border: solid 1px $primary-color-variant;
+                    background: transparent;
+                    padding: .6rem;
+                    color: $white-color;
+                    
                 }
-                
-
+                ::placeholder{
+                    color: $white-color;
+                    opacity: .3;
+                    font-family: 'Mulish', 'sans-serif';
+                    font-weight: 300;
+                }
+    
+               
+    
+                button {
+                    
+                    background: $primary-color-variant;
+                    color: $white-color;
+                    border: none;
+                    cursor: pointer;
+                    transition: all 400ms ease;
+                    padding: .71rem 1rem;
+                    border-radius:0 ;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                    &:hover{
+                        background: lighten($color: $primary-color-variant, $amount: 8%);
+                    }
+                    
+    
+                }
             }
         }
 
@@ -123,6 +193,94 @@ footer{
 
 //================= MEDIA QUERIES (MEDIUM DEVICES) ==================
 
+@media screen and(max-width:1600px){
+
+    footer{
+
+        .footer_content{
+
+            display: grid;
+            grid-template-columns: repeat(4 , 1fr);
+            grid-gap: 1rem;
+
+
+            .newsletter{
+                width: 150%;
+                
+
+                .news{
+                    display: flex;
+                    gap: .7rem;
+                    
+    
+                    input{
+                        width: 60%;
+                        border: solid 1px $primary-color-variant;
+                        background: transparent;
+                        padding: .6rem;
+                        color: $white-color;
+                        
+                    }
+                    ::placeholder{
+                        color: $white-color;
+                        opacity: .3;
+                        font-family: 'Mulish', 'sans-serif';
+                        font-weight: 300;
+                    }
+        
+                   
+        
+                    button {
+                        
+                        background: $primary-color-variant;
+                        color: $white-color;
+                        border: none;
+                        cursor: pointer;
+                        transition: all 400ms ease;
+                        padding: .71rem 1rem;
+                        border-radius:0 ;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+        
+                        &:hover{
+                            background: lighten($color: $primary-color-variant, $amount: 8%);
+                        }
+                        
+        
+                    }
+                }
+            }
+
+            
+     
+        }
+
+        .footer-bottom{
+            .copyright{
+                gap: 1rem;
+
+                & > * {
+                    border-right: solid 1px $white-color  ;
+                    padding-right: 1rem;
+                }
+            }
+
+            a{
+                color: $white-color;
+                font-size: 1rem;
+                transition: all 400ms ease;
+    
+                &:hover{
+                    color: $primary-color-variant;
+                }
+            }
+    
+        }
+
+    }
+
+}
 @media screen and(max-width:1400px){
 
     footer{
@@ -143,11 +301,25 @@ footer{
                     margin-bottom: .5rem;
                 
                 }
-                input[type='submit']{
-                    width: 55%;
-                    display: block;
-                    margin-bottom: .5rem;
-                
+                button {
+                    
+                    background: $primary-color-variant;
+                    color: $white-color;
+                    border: none;
+                    cursor: pointer;
+                    transition: all 400ms ease;
+                    padding: .71rem 1rem;
+                    border-radius:0 ;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    display: none;
+    
+                    &:hover{
+                        background: lighten($color: $primary-color-variant, $amount: 8%);
+                    }
+                    
+    
                 }
             }
 
@@ -313,5 +485,7 @@ footer{
 
 
 }
+
+
 
 

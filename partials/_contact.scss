@@ -34,11 +34,11 @@
                 border-radius: 5px;
             }
 
-            input[type='submit']{
-                padding: 0;
-                background: transparent;
-                color: $white-color;
-                border: 0;
+           button {
+               padding:  1rem 2rem;
+               display: flex;
+               justify-content: center;
+               align-items: center;
             }
 
             .choix_service{
@@ -122,6 +122,7 @@
 
                 .btn{
                     width: max-content;
+                    padding: 1rem 2rem;
                 }
 
             }

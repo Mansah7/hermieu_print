@@ -56,7 +56,9 @@ section{
                 }
 
                 .newsletter_suscribe{
+
                     width: 100%;
+                    padding: 1rem;
                     background-color: rgba($black-color, .03);
                     input{
                         display: block;
@@ -64,6 +66,13 @@ section{
                         padding: 1rem;
                         margin-bottom: .6rem;
                     }
+
+                    button {
+                        padding:  1rem 2rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                     }
                 }
                 .related_post{
 
@@ -191,6 +200,14 @@ section{
                     }
                 }
 
+                button {
+                    width: max-content;
+                    padding:  .8rem 2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                 }
+
                 textarea{
                     padding: 1rem;
                 }
@@ -278,7 +295,16 @@ section{
                             padding: 1rem;
                             margin-bottom: .6rem;
                             min-height: 1rem;
+                            border-radius: 0;
                         }
+
+                        button {
+                            width: 100%;
+                            padding:  .8rem 2rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                         }
                     }
                     .related_post{
 
@@ -428,13 +454,13 @@ section{
                         font-weight: 400;
                     }
 
-                    input[type='submit']{
-                        
+                    button {
                         width: 100%;
-                        min-height: 1rem;
-                        padding: 1rem;
-                        
-                    }
+                        padding:  .8rem 2rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                     }
                     
                 }
             }

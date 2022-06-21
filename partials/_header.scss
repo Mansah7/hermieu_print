@@ -62,10 +62,13 @@ header{
                    
                 }
     
-                a{
-                    
-                    color: $white-color;
-                    
+                button{
+                    padding: .9rem 2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: max-content;
+                   
                 }
             }
 
@@ -147,11 +150,15 @@ header{
                    
                 }
     
-                a{
-                    color: $white-color;
-                    padding: .7rem 1rem;
-                    text-align: center;
+                button{
+                    padding: .9rem 2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: max-content;
+                   
                 }
+
                 }
 
 
@@ -230,10 +237,13 @@ header{
                    
                 }
     
-                a{
-                    color: $white-color;
-                    padding: .7rem 1rem;
-                    text-align: center;
+                button{
+                    padding: .9rem 2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: max-content;
+                   
                 }
                 }
 
@@ -313,16 +323,19 @@ header{
                        
                     }
         
-                    a{
-                        color: $white-color;
-                        padding: .7rem 1rem;
-                        text-align: center;
+                    button{
+                        padding: .9rem 2rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: max-content;
+                       
                     }
 
                 }
 
                 .right{
-                    width: 100%;
+                    width: 90%;
                 }
 
          
@@ -350,21 +363,46 @@ header{
 
                 width: 90%;
 
-                
-                h1{
-                    font-size: 3rem;
-                    margin-bottom: 1.3rem;
 
-                }
-                p{
-                    width: 90%;
-                    margin-bottom: 1.3rem;
-                }
+                .left{
 
-                a{
-                   font-size: .8rem;
-                   color: $white-color;
-                }
+                    display: flex;
+                    flex-direction: column;
+                    
+    
+                    h1{
+                        font-size: 1.8rem;
+                        line-height: 1.2;
+                        margin-bottom: 1rem;
+                        font-weight: 400;
+                        color: $white-color;
+                        
+                        
+                        
+                        
+                    }
+        
+                    p{
+                        width: 90%;
+                        color: $white-color;
+                        margin-bottom: 1.3rem;
+                       
+                    }
+        
+                    button{
+                        padding: .9rem 2rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: max-content;
+                       
+                    }
+        
+                   }
+    
+                   .right{
+                    max-width: 100%;
+                   }
             }
         }
     }
@@ -412,12 +450,17 @@ header{
             .hero_content{
 
                 width: 90%;
+
                .left{
+
+                display: flex;
+                flex-direction: column;
+                
 
                 h1{
                     font-size: 1.8rem;
                     line-height: 1.2;
-                    margin-bottom: 2rem;
+                    margin-bottom: 1rem;
                     font-weight: 400;
                     color: $white-color;
                     text-align: center;
@@ -431,17 +474,23 @@ header{
                     color: $white-color;
                     text-align: center;
                     margin: 0 auto;
-                    margin-bottom: 2rem;
+                    margin-bottom: 1rem;
                    
                 }
     
-                a{
-                    color: $white-color;
+                button{
+                    padding: .9rem 2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     width: 100%;
-                    padding: .7rem 0;
-                    text-align: center;
+                   
                 }
     
+               }
+
+               .right{
+                max-width: 100%;
                }
             }
     

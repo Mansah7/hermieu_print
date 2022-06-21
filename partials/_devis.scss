@@ -39,9 +39,8 @@
                 border-radius: 5px;
             }
 
-            input[type='submit']{
-                padding: 0;
-                background: transparent;
+            button {
+                padding: 1rem 2rem;
                 color: $white-color;
                 border: 0;
             }
@@ -71,6 +70,7 @@
 
             .btn{
                 margin-top: 1rem;
+               
             }
            
         }
