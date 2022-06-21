@@ -113,7 +113,7 @@ footer{
                     border: none;
                     cursor: pointer;
                     transition: all 400ms ease;
-                    padding: .71rem 1rem;
+                    padding: .7rem 1rem;
                     border-radius:0 ;
                     display: flex;
                     justify-content: center;
@@ -237,7 +237,7 @@ footer{
                         border: none;
                         cursor: pointer;
                         transition: all 400ms ease;
-                        padding: .71rem 1rem;
+                        padding: .7rem 1rem;
                         border-radius:0 ;
                         display: flex;
                         justify-content: center;
@@ -294,32 +294,47 @@ footer{
 
             .newsletter{
                 width: 150%;
-
-                input[type='text']{
-                    width: 55%;
-                    display: block;
-                    margin-bottom: .5rem;
-                
-                }
-                button {
-                    
-                    background: $primary-color-variant;
-                    color: $white-color;
-                    border: none;
-                    cursor: pointer;
-                    transition: all 400ms ease;
-                    padding: .71rem 1rem;
-                    border-radius:0 ;
+                .news{
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    display: none;
-    
-                    &:hover{
-                        background: lighten($color: $primary-color-variant, $amount: 8%);
-                    }
+                    gap: .7rem;
                     
     
+                    input{
+                        width: 60%;
+                        border: solid 1px $primary-color-variant;
+                        background: transparent;
+                        padding: .6rem;
+                        color: $white-color;
+                        
+                    }
+                    ::placeholder{
+                        color: $white-color;
+                        opacity: .3;
+                        font-family: 'Mulish', 'sans-serif';
+                        font-weight: 300;
+                    }
+        
+                   
+        
+                    button {
+                        
+                        background: $primary-color-variant;
+                        color: $white-color;
+                        border: none;
+                        cursor: pointer;
+                        transition: all 400ms ease;
+                        padding: .7rem 1rem;
+                        border-radius:0 ;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+        
+                        &:hover{
+                            background: lighten($color: $primary-color-variant, $amount: 8%);
+                        }
+                        
+        
+                    }
                 }
             }
 
@@ -369,16 +384,46 @@ footer{
                 width: 100%;
                 
                 .news{
-
                     display: flex;
-                    gap: .3rem;
-                    input[type='text']{
+                    gap: .7rem;
+                    
+    
+                    input{
                         width: 60%;
+                        border: solid 1px $primary-color-variant;
+                        background: transparent;
+                        padding: .6rem;
+                        color: $white-color;
+                        
                     }
-                    input[type='submit']{
-                        width: 30%;
+                    ::placeholder{
+                        color: $white-color;
+                        opacity: .3;
+                        font-family: 'Mulish', 'sans-serif';
+                        font-weight: 300;
                     }
-
+        
+                   
+        
+                    button {
+                        
+                        background: $primary-color-variant;
+                        color: $white-color;
+                        border: none;
+                        cursor: pointer;
+                        transition: all 400ms ease;
+                        padding: .7rem 1rem;
+                        border-radius:0 ;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+        
+                        &:hover{
+                            background: lighten($color: $primary-color-variant, $amount: 8%);
+                        }
+                        
+        
+                    }
                 }
 
                 
@@ -431,16 +476,47 @@ footer{
             .newsletter{
                 width: 100%;
 
-                input[type='text']{
-                    width: 65%;
-                    min-height: 1rem;
-                    display: block;
-                    border-radius: 0 !important;
-                }
-                input[type='submit']{
-                    min-height: 1rem;
-                    border-radius: 0 !important;
-                    display: block;
+                .news{
+                    display: flex;
+                    gap: .7rem;
+                    
+    
+                    input{
+                        width: 60%;
+                        border: solid 1px $primary-color-variant;
+                        background: transparent;
+                        padding: .6rem;
+                        color: $white-color;
+                        
+                    }
+                    ::placeholder{
+                        color: $white-color;
+                        opacity: .3;
+                        font-family: 'Mulish', 'sans-serif';
+                        font-weight: 300;
+                    }
+        
+                   
+        
+                    button {
+                        
+                        background: $primary-color-variant;
+                        color: $white-color;
+                        border: none;
+                        cursor: pointer;
+                        transition: all 400ms ease;
+                        padding: .71rem 1rem;
+                        border-radius:0 ;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+        
+                        &:hover{
+                            background: lighten($color: $primary-color-variant, $amount: 8%);
+                        }
+                        
+        
+                    }
                 }
             }
 
