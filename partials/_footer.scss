@@ -205,16 +205,17 @@ footer{
 
 
             .newsletter{
-                width: 150%;
+                width: 100%;
                 
 
                 .news{
                     display: flex;
+                    flex-direction: column;
                     gap: .7rem;
                     
     
                     input{
-                        width: 60%;
+                        width: 100%;
                         border: solid 1px $primary-color-variant;
                         background: transparent;
                         padding: .6rem;
@@ -242,6 +243,7 @@ footer{
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        width: 100%;
         
                         &:hover{
                             background: lighten($color: $primary-color-variant, $amount: 8%);
@@ -293,14 +295,14 @@ footer{
 
 
             .newsletter{
-                width: 150%;
+                width: 100%;
                 .news{
                     display: flex;
                     gap: .7rem;
                     
     
                     input{
-                        width: 60%;
+                        width: 100%;
                         border: solid 1px $primary-color-variant;
                         background: transparent;
                         padding: .6rem;
@@ -317,7 +319,7 @@ footer{
                    
         
                     button {
-                        
+                        width: 100%;
                         background: $primary-color-variant;
                         color: $white-color;
                         border: none;
@@ -328,6 +330,7 @@ footer{
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        
         
                         &:hover{
                             background: lighten($color: $primary-color-variant, $amount: 8%);
@@ -406,7 +409,7 @@ footer{
                    
         
                     button {
-                        
+                        width: 60%;
                         background: $primary-color-variant;
                         color: $white-color;
                         border: none;
@@ -487,6 +490,7 @@ footer{
                         background: transparent;
                         padding: .6rem;
                         color: $white-color;
+                        border-radius: 0;
                         
                     }
                     ::placeholder{

@@ -478,7 +478,8 @@
                     input{
                         margin-top: .5rem;
                         width: 100%;
-                        padding: .5rem;
+                        padding: .8rem;
+                        border-radius: 0;
                     }
 
                 }
@@ -493,8 +494,9 @@
 
                     * input{
                         width: 4rem;
-                        padding: .5rem;
+                        padding: .8rem;
                         margin-top: .5rem;
+                        border-radius: 0;
                     }
 
                     .month, .cvc{
@@ -522,7 +524,7 @@
                         cursor: pointer;
                         display: block;
 
-                        padding: 1rem;
+                        padding: .8rem;
                     }
 
                     .pay{
@@ -531,7 +533,7 @@
 
                         background: $succes-color;
                         color: $white-color;
-                        padding: 1rem;
+                        padding: .8rem;
                         width: 100%;
                         cursor: pointer;
                         transition: all 400ms ease;

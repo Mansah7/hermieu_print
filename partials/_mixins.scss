@@ -9,8 +9,8 @@
     transition: all 400ms ease;
     
     &:hover{
-        background: lighten($color: $backgroundColor, $amount: 7%);
-        box-shadow: 0 .5rem 1.6rem rgba($black-color, 0.06);
+        background: lighten($color: $backgroundColor, $amount: 2%);
+        box-shadow: 0 .3rem 1.6rem rgba($black-color, 0.06);
         
     }
 }
