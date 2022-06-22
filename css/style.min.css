@@ -3144,6 +3144,10 @@ footer .footer_content .footer a:hover {
   color: #fff;
 }
 
+footer .footer_content .navigation a {
+  margin-bottom: .5rem;
+}
+
 footer .footer_content .newsletter {
   width: 35%;
 }
