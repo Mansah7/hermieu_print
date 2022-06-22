@@ -4815,7 +4815,7 @@ section .container .comment .comment_container h5 {
 #suscribe .container .section_holder .card_infos .cta-btn .pay {
   background: #2bb604;
   color: #fff;
-  padding: 1rem;
+  padding: .8rem;
   width: 40%;
   cursor: pointer;
   -webkit-transition: all 400ms ease;
@@ -4986,13 +4986,13 @@ section .container .comment .comment_container h5 {
     color: #fff;
     cursor: pointer;
     display: block;
-    padding: 1rem;
+    padding: .9rem;
   }
   #suscribe .container .section_holder .card_infos .cta-btn .pay {
     display: block;
     background: #2bb604;
     color: #fff;
-    padding: 1rem;
+    padding: .9rem;
     width: 100%;
     cursor: pointer;
     -webkit-transition: all 400ms ease;
@@ -5104,7 +5104,8 @@ section .container .comment .comment_container h5 {
   #suscribe .container .section_holder .card_infos .nom input {
     width: 100%;
     margin-top: .5rem;
-    padding: .5rem;
+    padding: .8rem;
+    border-radius: 0;
   }
   #suscribe .container .section_holder .card_infos .card-detail {
     color: #fff;
