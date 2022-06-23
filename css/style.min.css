@@ -2751,9 +2751,6 @@ section .history .history_content .btn {
         -ms-flex-align: center;
             align-items: center;
   }
-  #partenaires .partenaires {
-    background: rgba(12, 3, 27, 0.1);
-  }
   #partenaires .partenaires img {
     width: 50%;
   }
