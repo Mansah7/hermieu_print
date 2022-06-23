@@ -36,9 +36,64 @@
         p{
             color: $white-color;
             text-align: center;
+            max-width: 500px;
+            font-size: 1.2rem;
 
         }
 
     }
+    
+}
+
+
+@media screen and (max-width:1024px) {
+
+    .blog{
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        background: url(images/color-palette2.jpg) no-repeat center center/cover;
+        ::after{
+            content: '';
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 70vh;
+            background: $primary-color ;
+            opacity: 1;
+            z-index: -1;
+            
+        }
+    
+        .hero-content{
+            max-width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            gap: 2rem;
+    
+            h1{
+                font-size: 3rem;
+                color: $white-color;
+                text-transform: uppercase;
+            }
+    
+            p{
+                color: $white-color;
+                text-align: center;
+                max-width: 500px;
+                font-size: 1rem;
+    
+            }
+    
+        }
+        
+    }
+    
     
 }
