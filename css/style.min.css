@@ -919,6 +919,10 @@ header .container .hero_content .left button {
   width: max-content;
 }
 
+header .container .hero_content .left button a {
+  color: #fff;
+}
+
 header .container .hero_content .right {
   width: 100%;
 }
@@ -983,6 +987,9 @@ header .container .hero_image img {
     width: -moz-max-content;
     width: max-content;
   }
+  header .container .hero_content .left button a {
+    color: #fff;
+  }
   header .container .hero_content .right {
     width: 150%;
   }
@@ -1043,6 +1050,9 @@ header .container .hero_image img {
     width: -moz-max-content;
     width: max-content;
   }
+  header .container .hero_content .left button a {
+    color: #fff;
+  }
   header .container .hero_content .right {
     width: 150%;
   }
@@ -1102,6 +1112,9 @@ header .container .hero_image img {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
+  }
+  header .container .hero_content .left button a {
+    color: #fff;
   }
   header .container .hero_content .right {
     width: 90%;

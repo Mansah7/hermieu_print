@@ -68,8 +68,13 @@ header{
                     justify-content: center;
                     align-items: center;
                     width: max-content;
-                   
+                    a{
+                        color: $white-color;
+                    }
+                        
                 }
+
+               
             }
 
             .right{
@@ -156,6 +161,10 @@ header{
                     justify-content: center;
                     align-items: center;
                     width: max-content;
+
+                    a{
+                        color: $white-color;
+                    }
                    
                 }
 
@@ -243,6 +252,10 @@ header{
                     justify-content: center;
                     align-items: center;
                     width: max-content;
+
+                    a{
+                        color: $white-color;
+                    }
                    
                 }
                 }
@@ -329,6 +342,10 @@ header{
                         justify-content: center;
                         align-items: center;
                         width: max-content;
+
+                        a{
+                            color: $white-color;
+                        }
                        
                     }
 
