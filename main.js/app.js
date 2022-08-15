@@ -17,32 +17,32 @@ const scrollTrackingTimeline = new ScrollTimeline({
 });
 
 
-animatedSections.forEach(section => {
+// animatedSections.forEach(section => {
 
-  const animatedSectionTimeline = new ScrollTimeline({
+//   const animatedSectionTimeline = new ScrollTimeline({
 
-    scrollOffsets: [
-      {target: section, edge:'end', threshold: '0'},
-      {target: section, edge:'start', threshold: '1'},
-    ],
+//     scrollOffsets: [
+//       {target: section, edge:'end', threshold: '0'},
+//       {target: section, edge:'start', threshold: '1'},
+//     ],
     
-  });
+//   });
 
-  section.animate(
+//   section.animate(
 
-    {
-      transform:['translateY(0)', 'translateY(0)'],
-      opacity: ['0', '1']
+//     {
+//       transform:['translateY(0)', 'translateY(0)'],
+//       opacity: ['0', '1']
       
-    },
+//     },
   
-    {
-      duration: .3,
-      timeline: animatedSectionTimeline,
-    }
-  );
+//     {
+//       duration: .3,
+//       timeline: animatedSectionTimeline,
+//     }
+//   );
 
-});
+// });
 
 
 scrollTracker.animate(
