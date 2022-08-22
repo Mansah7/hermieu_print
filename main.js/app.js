@@ -38,7 +38,13 @@ const navItems = document.querySelector('#nav_items');
 const openNavBtn = document.querySelector('#open_nav-btn');
 const closeNavBtn = document.querySelector('#close_nav-btn');
 const navList = document.querySelector('.navElement');
-
+const navList2 = document.querySelector('.navElement2');
+const navList3 = document.querySelector('.navElement3');
+const navList4 = document.querySelector('.navElement4');
+const navList5 = document.querySelector('.navElement5');
+const navList6 = document.querySelector('.navElement6');
+const navList7 = document.querySelector('.navElement7');
+const navList11 = document.querySelector('.navElement11');
 const navList10 = document.querySelector('.navElement10');
 
 
@@ -49,7 +55,42 @@ navList.addEventListener('click', () => {
   openNavBtn.style.display = 'inline-block';
 })
 
+navList2.addEventListener('click', () => {
+  navItems.classList.add('nav_closed');
+  closeNavBtn.style.display = 'none';
+  openNavBtn.style.display = 'inline-block';
+})
+navList3.addEventListener('click', () => {
+  navItems.classList.add('nav_closed');
+  closeNavBtn.style.display = 'none';
+  openNavBtn.style.display = 'inline-block';
+})
+navList4.addEventListener('click', () => {
+  navItems.classList.add('nav_closed');
+  closeNavBtn.style.display = 'none';
+  openNavBtn.style.display = 'inline-block';
+})
+navList5.addEventListener('click', () => {
+  navItems.classList.add('nav_closed');
+  closeNavBtn.style.display = 'none';
+  openNavBtn.style.display = 'inline-block';
+})
+navList6.addEventListener('click', () => {
+  navItems.classList.add('nav_closed');
+  closeNavBtn.style.display = 'none';
+  openNavBtn.style.display = 'inline-block';
+})
+navList7.addEventListener('click', () => {
+  navItems.classList.add('nav_closed');
+  closeNavBtn.style.display = 'none';
+  openNavBtn.style.display = 'inline-block';
+})
 navList10.addEventListener('click', () => {
+  navItems.classList.add('nav_closed');
+  closeNavBtn.style.display = 'none';
+  openNavBtn.style.display = 'inline-block';
+})
+navList11.addEventListener('click', () => {
   navItems.classList.add('nav_closed');
   closeNavBtn.style.display = 'none';
   openNavBtn.style.display = 'inline-block';

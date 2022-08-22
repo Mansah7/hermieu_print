@@ -1,4 +1,5 @@
 nav{
+
     width: 100vw;
     height: 5rem;
     position: fixed;
@@ -9,7 +10,6 @@ nav{
     place-items: center;
     box-shadow: 0 .3rem .5rem rgba($color: $black-color, $alpha: .09);
     @include navGradientBackground;
-
     text-transform: uppercase;
     
     
@@ -75,7 +75,6 @@ nav{
             display: flex;
             align-items: center;
             gap: 3rem;
-            
 
             #sous-menu1{
                 position: relative;
@@ -171,6 +170,8 @@ nav{
 
                
             }
+
+           
         }
 
         // ================ MEDIUM DEVICES ONLY ============
@@ -798,6 +799,8 @@ nav{
             }
         }
     }
+
+
   }
 
     
